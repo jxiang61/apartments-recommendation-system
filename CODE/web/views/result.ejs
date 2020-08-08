@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+	<div class='container' style='margin: 30px auto'>
+		<h1>
+			Apartment Infomation
+		</h1>
+		<br>
+		<br>
+		<h3>
+			Location: (<%= apt.lat %>, <%= apt.lng %>)
+		</h3>
+		<h3>
+			Bedroom: <%= apt.bedroom %>
+		</h3>
+		<h3>
+			Bathroom: <%= apt.bathroom %>
+		</h3>
+		<h3>
+			Area: <%= apt.area %> square feet
+		</h3>
+		<br>
+		<h2>
+			Price: Starts at $ <%= price %>
+		</h2>
+		<br>
+		<br>
+		<a href='/home/predict'>Back</a>
+	</div>
